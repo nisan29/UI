@@ -1,0 +1,9 @@
+<mat-accordion multi="true">
+  <mat-expansion-panel *ngFor="let post of posts; let i=index">
+    <mat-expansion-panel-header>{{post.title}}</mat-expansion-panel-header>
+    <p>{{post.content}}</p>
+    <mat-action-row>
+      <button mat-button color="primary" (click)="remove(i)">Remove</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

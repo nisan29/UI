@@ -1,0 +1,11 @@
+<mat-card [formGroup]="postCreateForm">
+  <mat-form-field>
+    <input matInput type="text" formControlName="enteredTitle">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput rows="6" formControlName="enteredContent"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="accent" (click)="onAddPost()">
+    Save Post
+  </button>
+</mat-card>
